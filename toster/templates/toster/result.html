@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты теста</title>
+
+</head>
+<style>
+        table {width:600px;
+               border: 1px solid green;
+               margin:auto;}
+        img {width: 600px;
+              heigh:100px;
+              margin:}
+
+
+      </style>
+
+<body>
+<p>Ваш результат - {{ result }}
+{%if result == 5 %}
+      баллов</p>
+<img src="{% static 'img/красава.jpg' %}" alt="photo">
+{%endif%}
+{% if result == 0 %}
+<img src="{% static 'img/skreen.png.png' %}" alt="photo">
+{%endif%}
+
+<p>Вы допустили ошибки в следующих вопросах:{{mistakes}}</p>
+</body>
+
+</html>

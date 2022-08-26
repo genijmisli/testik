@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="POST"> {% csrf_token %}
+    <label for="A1">{{Q1}}</label>
+    <input type="text" id="A1" name="A1"><hr>
+    <label for="A2">{{Q2}}</label>
+    <input type="text" id="A2" name="A2"><hr>
+     <label for="A3">{{Q3}}</label>
+    <input type="text" id="A3" name="A3"><hr>
+     <label for="A4">{{Q4}}</label>
+    <input type="text" id="A4" name="A4"><hr>
+     <label for="A5">{{Q5}}</label>
+    <input type="text" id="A5" name="A5"><hr>
+
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+<img src="{% static 'img/думай.webp' %}" alt="photo">
